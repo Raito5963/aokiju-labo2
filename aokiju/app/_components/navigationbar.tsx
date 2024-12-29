@@ -10,7 +10,7 @@ return (
     >
         <Toolbar>
             <Typography variant="h6" noWrap component="div">
-                <Link href="/" underline="none" color="inherit">
+                <Link href="/" underline="none" color="white">
                     Aokiju Labo
                 </Link>
             </Typography>

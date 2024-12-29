@@ -20,8 +20,10 @@ type MenuItem = {
     icon: React.ReactNode;
 };
 const menuList: MenuItem[] = [
-    { name: "ページ１", url: "/page1", icon: <BeachAccessIcon /> },
-    { name: "ページ２", url: "/page2", icon: <CoffeeIcon /> },
+    { name: "自己紹介", url: "/introduction", icon: <BeachAccessIcon /> },
+    { name: "資格", url: "/qualification", icon: <CoffeeIcon /> },
+    { name: "制作物", url: "/production", icon: <BeachAccessIcon /> },
+    { name: "ブログ", url: "/blog", icon: <CoffeeIcon /> },
 ];
 
 const drawerWidth = 240;

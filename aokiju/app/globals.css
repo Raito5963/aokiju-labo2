@@ -1,0 +1,30 @@
+/* Breakpoints for responsive design */
+:root {
+    --breakpoint-xs: 0px;
+    --breakpoint-sm: 600px;
+    --breakpoint-md: 960px;
+    --breakpoint-lg: 1280px;
+    --breakpoint-xl: 1920px;
+}
+
+Paper{
+    @media (min-width: var(--breakpoint-xs)) {
+        width: 200px;
+    }
+    
+    @media (min-width: var(--breakpoint-sm)) {
+        width: 400px;
+    }
+    
+    @media (min-width: var(--breakpoint-md)) {
+        width: 750px;
+    }
+    
+    @media (min-width: var(--breakpoint-lg)) {
+        width: 1000px;
+    }
+    
+    @media (min-width: var(--breakpoint-xl)) {
+        width: 1500px;
+    }
+}
