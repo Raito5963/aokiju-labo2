@@ -11,8 +11,10 @@ import {
 } from "@mui/material";
 import React from "react";
 import { useSidebar } from "./SidebarContext";
-import BeachAccessIcon from "@mui/icons-material/BeachAccess";
 import CoffeeIcon from "@mui/icons-material/Coffee";
+import EditNoteIcon from '@mui/icons-material/EditNote';
+import PersonIcon from '@mui/icons-material/Person';
+import CategoryIcon from '@mui/icons-material/Category';
 
 type MenuItem = {
     name: string;
@@ -20,9 +22,9 @@ type MenuItem = {
     icon: React.ReactNode;
 };
 const menuList: MenuItem[] = [
-    { name: "自己紹介", url: "/introduction", icon: <BeachAccessIcon /> },
-    { name: "資格", url: "/qualification", icon: <CoffeeIcon /> },
-    { name: "制作物", url: "/production", icon: <BeachAccessIcon /> },
+    { name: "自己紹介", url: "/introduction", icon: <PersonIcon /> },
+    { name: "資格", url: "/qualification", icon: <EditNoteIcon /> },
+    { name: "制作物", url: "/production", icon: <CategoryIcon /> },
     { name: "ブログ", url: "/blog", icon: <CoffeeIcon /> },
 ];
 
