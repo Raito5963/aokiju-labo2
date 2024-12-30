@@ -9,10 +9,10 @@ import {
     ListItemIcon,
     Toolbar,
 } from "@mui/material";
+import React from "react";
+import { useSidebar } from "./SidebarContext";
 import BeachAccessIcon from "@mui/icons-material/BeachAccess";
 import CoffeeIcon from "@mui/icons-material/Coffee";
-import React from "react";
-import { usePathname } from "next/navigation";
 
 type MenuItem = {
     name: string;
@@ -29,16 +29,12 @@ const menuList: MenuItem[] = [
 const drawerWidth = 240;
 
 const SideBar = () => {
-    const pathname = usePathname();
-    const isSelected = (url: string) => {
-        if (pathname === url || pathname.startsWith(url + "/")) {
-            return true;
-        }
-        return false;
-    };
+    const { isSidebarOpen } = useSidebar();
+
     return (
         <Drawer
-            variant="permanent"
+            open={isSidebarOpen}
+            onClose={() => console.log("Drawer closed")}
             sx={{
                 width: drawerWidth,
                 flexShrink: 0,
@@ -53,7 +49,7 @@ const SideBar = () => {
                 <List>
                     {menuList.map(({ name, url, icon }: MenuItem) => (
                         <ListItem key={name} disablePadding>
-                            <ListItemButton selected={isSelected(url)}>
+                            <ListItemButton>
                                 <ListItemIcon>{icon}</ListItemIcon>
                                 <Link href={url} underline="none" color="inherit">
                                     {name}
