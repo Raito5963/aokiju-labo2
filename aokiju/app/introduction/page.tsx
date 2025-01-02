@@ -6,7 +6,6 @@ import {
 } from "@mui/material";
 import React from "react";
 import pperImage from "./../image/pper.png";
-import { Height } from "@mui/icons-material";
 
 const PageOne = () => {
     return (

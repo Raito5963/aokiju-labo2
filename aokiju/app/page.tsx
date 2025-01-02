@@ -9,19 +9,6 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
-import { createTheme } from "@mui/material/styles";
-
-let theme = createTheme({
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 600,
-      md: 768,
-      lg: 1025,
-      xl: 1536,
-    },
-  },
-});
 
 function createData(subject: string, name: string, version: string) {
   return { subject, name, version };
