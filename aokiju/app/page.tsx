@@ -86,7 +86,7 @@ export default function Home() {
                   sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                 >
                   <TableCell component="th" scope="row">
-                    {row.name}
+                    {row.subject}
                   </TableCell>
                   <TableCell align="center">{row.name}</TableCell>
                   <TableCell align="center">{row.version}</TableCell>
