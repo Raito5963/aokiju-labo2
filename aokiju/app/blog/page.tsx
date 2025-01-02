@@ -1,4 +1,4 @@
-import { Box, Paper, Container } from "@mui/material";
+import {  Paper, Container } from "@mui/material";
 import React from "react";
 import TweetCard from "./../_components/TweetCard";
 import { Tweets } from "./../_components/tweet";  // tweet.ts からデータをインポート
