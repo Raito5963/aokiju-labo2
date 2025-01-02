@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Aokiju Labo",
-  description: "Aokiju Labo top page",
+  description: "AokijuLaboへようこそ！サイト主がNext.jsを練習するために作ったよ！",
 };
 
 export default function RootLayout({
