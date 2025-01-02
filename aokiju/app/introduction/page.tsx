@@ -49,7 +49,9 @@ const PageOne = () => {
                 <h3 style={{ lineHeight: 1.5 }}>
                     <p>趣味はルービックキューブと将棋です！</p>
                     <p>ルービックキューブの最速タイム　12.95秒</p>
+                    <p>使用しているルービックキューブ　XMD tornade v3 M Pioneer</p>
                     <p>将棋で使っている戦法　極限早繰り銀</p>
+                    <p>将棋クエスト　7級　レート1352</p>
                 </h3>
             </Paper>
         </Container>
